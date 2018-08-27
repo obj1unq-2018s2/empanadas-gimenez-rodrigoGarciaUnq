@@ -4,8 +4,11 @@ object gimenez {
 //	var property sueldo = 15000
 
 	var sueldo = 15000
+	var totalCobrado = 0
+	
 	method sueldo() { return 15000 }
 	method sueldo(nuevoValor) { sueldo = nuevoValor }
+	method totalCobrado() {return totalCobrado}
 }
 
 object baigorria {
