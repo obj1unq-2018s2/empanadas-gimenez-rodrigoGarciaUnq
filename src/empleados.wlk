@@ -22,7 +22,8 @@ object baigorria {
 	
 	method cobrarSueldo(){
 		if (self.totalDeuda().between(1, self.sueldo())){
-			deuda = self.sueldo() - deuda
+		    dinero = self.sueldo()- deuda
+			deuda = 0
 		}
 		else if (self.totalDeuda() == 0){dinero += self.sueldo()}
 		     else{deuda-= self.sueldo()}
@@ -35,7 +36,9 @@ object baigorria {
 	
 	method gastar(cantidad){
 		if (dinero > cantidad){ dinero -= cantidad }
-		else {deuda += (cantidad - dinero)}
+		else {deuda += (cantidad - dinero)
+			  dinero = 0
+			}
 	}
 }
 
